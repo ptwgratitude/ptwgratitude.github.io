@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profil Paulus Tri Wahyudi (PTW), Arsitek Pengembangan Manusia dan pengembang pendekatan Gratitude-Based Development.">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>About PTW | Human Development Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ivory: #f7f5ef;
+      --paper: #fffefa;
+      --sage: #dfe8df;
+      --sage-deep: #b9cbbb;
+      --olive: #34483d;
+      --olive-soft: #53685b;
+      --gold: #b69a65;
+      --ink: #27332d;
+      --muted: #69736c;
+      --line: #e7e3d9;
+      --shadow: 0 18px 55px rgba(45, 62, 51, .08);
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'DM Sans', Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--ivory); color: var(--ink); font-family: var(--sans); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1120px, calc(100% - 48px)); margin: 0 auto; }
+    .topbar { padding: 22px 0; border-bottom: 1px solid rgba(52,72,61,.10); background: rgba(255,254,250,.78); }
+    .nav { display:flex; justify-content:space-between; align-items:center; gap:24px; }
+    .brand { font-weight:700; letter-spacing:.12em; font-size: .88rem; color:var(--olive); }
+    .brand span { color:var(--gold); }
+    .navlinks { display:flex; gap:25px; align-items:center; color:var(--muted); font-size:.86rem; }
+    .navlinks a:hover { color:var(--olive); }
+    .nav-cta { border:1px solid var(--gold); padding:9px 16px; border-radius:30px; color:var(--olive); }
+    .hero { padding:76px 0 82px; overflow:hidden; }
+    .hero-grid { display:grid; grid-template-columns: 1.12fr .88fr; gap:70px; align-items:center; }
+    .eyebrow { color:var(--gold); font-size:.76rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { font:600 clamp(2.7rem, 5.4vw, 4.8rem)/1.12 var(--serif); letter-spacing:-.035em; color:var(--olive); margin:18px 0 12px; }
+    .role { font-size:1.05rem; font-weight:600; color:var(--olive-soft); margin-bottom:18px; }
+    .hero-copy { max-width:610px; color:var(--muted); font-size:1.04rem; }
+    .tagline { margin-top:26px; color:var(--olive); font-weight:700; letter-spacing:.045em; }
+    .hero-actions { display:flex; gap:13px; flex-wrap:wrap; margin-top:30px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:13px 21px; border-radius:32px; font-size:.9rem; font-weight:700; transition:.2s ease; }
+    .btn-primary { background:var(--olive); color:white; box-shadow:0 8px 22px rgba(52,72,61,.15); }
+    .btn-primary:hover { background:#26382e; transform:translateY(-2px); }
+    .btn-outline { border:1px solid var(--line); color:var(--olive); background:var(--paper); }
+    .btn-outline:hover { border-color:var(--gold); }
+    .portrait-wrap { position:relative; max-width:410px; margin:0 auto; width:100%; }
+    .portrait { aspect-ratio:4/5; border-radius:210px 210px 22px 22px; background:linear-gradient(155deg,#e7eee5 0%,#d6e2d7 48%,#f1eadb 100%); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; border:9px solid rgba(255,254,250,.8); box-shadow:var(--shadow); }
+    .portrait::before,.portrait::after { content:""; position:absolute; border:1px solid rgba(182,154,101,.48); border-radius:50%; width:270px; height:270px; }
+    .portrait::after { width:340px; height:340px; }
+    .monogram { position:relative; z-index:1; text-align:center; color:var(--olive); }
+    .monogram strong { display:block; font:600 5rem/1 var(--serif); letter-spacing:-.08em; }
+    .monogram span { display:block; margin-top:15px; font-size:.68rem; letter-spacing:.22em; font-weight:700; }
+    .portrait-note { position:absolute; bottom:22px; left:-25px; background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:13px 18px; box-shadow:var(--shadow); color:var(--muted); font-size:.78rem; }
+    .portrait-note strong { display:block; color:var(--olive); font-size:.9rem; }
+    .section { padding:82px 0; }
+    .section-white { background:var(--paper); }
+    .section-head { max-width:700px; margin-bottom:38px; }
+    h2 { font:600 clamp(2rem,3.5vw,3rem)/1.2 var(--serif); color:var(--olive); letter-spacing:-.025em; margin:12px 0 15px; }
+    .lead { color:var(--muted); font-size:1.03rem; }
+    .about-grid { display:grid; grid-template-columns: .7fr 1.3fr; gap:65px; }
+    .side-label { border-left:2px solid var(--gold); padding-left:18px; color:var(--olive); font:500 1.35rem/1.45 var(--serif); height:max-content; }
+    .prose p { color:var(--muted); margin-bottom:18px; }
+    .prose p:last-child { margin-bottom:0; }
+    .principle { background:var(--sage); padding:60px 0; }
+    .principle-inner { display:grid; grid-template-columns:.8fr 1.2fr; gap:55px; align-items:center; }
+    .principle-quote { font:500 clamp(1.55rem,3vw,2.35rem)/1.35 var(--serif); color:var(--olive); }
+    .principle-text { color:#53635a; }
+    .model { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; margin-top:32px; }
+    .model-step { background:var(--paper); border:1px solid rgba(52,72,61,.10); border-radius:14px; padding:20px 12px; text-align:center; min-height:112px; display:flex; flex-direction:column; justify-content:center; }
+    .model-step b { color:var(--olive); font-size:.92rem; }
+    .model-step span { color:var(--muted); font-size:.72rem; margin-top:5px; }
+    .areas { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+    .area { padding:24px 19px; border:1px solid var(--line); background:var(--paper); border-radius:16px; min-height:155px; }
+    .area .num { color:var(--gold); font-size:.75rem; letter-spacing:.12em; font-weight:700; }
+    .area h3 { color:var(--olive); font:600 1.18rem var(--serif); margin:13px 0 7px; }
+    .area p { color:var(--muted); font-size:.82rem; margin:0; line-height:1.55; }
+    .credentials { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+    .credential-card { background:var(--ivory); border:1px solid var(--line); border-radius:18px; padding:30px; }
+    .credential-card h3 { font:600 1.35rem var(--serif); color:var(--olive); margin-bottom:16px; }
+    .credential-list { list-style:none; padding:0; margin:0; }
+    .credential-list li { padding:10px 0; border-bottom:1px solid var(--line); color:var(--muted); }
+    .credential-list li:last-child { border:0; }
+    .credential-list strong { color:var(--olive); }
+    .cta { background:var(--olive); color:#fff; padding:72px 0; text-align:center; }
+    .cta .eyebrow { color:#d7c49b; }
+    .cta h2 { color:#fff; max-width:700px; margin:13px auto 16px; }
+    .cta p { color:rgba(255,255,255,.76); max-width:620px; margin:0 auto 27px; }
+    .cta .btn-primary { background:#e5d5b4; color:#34483d; box-shadow:none; }
+    footer { padding:25px 0; background:#293a31; color:rgba(255,255,255,.7); font-size:.8rem; }
+    .footer-inner { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    .footer-brand { color:#fff; font-weight:700; letter-spacing:.1em; }
+    @media (max-width:850px) {
+      .navlinks { gap:13px; }
+      .navlinks a:not(.nav-cta) { display:none; }
+      .hero-grid,.about-grid,.principle-inner { grid-template-columns:1fr; gap:38px; }
+      .hero { padding:55px 0 65px; }
+      .portrait-wrap { max-width:330px; }
+      .model { grid-template-columns:repeat(2,1fr); }
+      .model-step:last-child { grid-column:span 2; }
+      .areas { grid-template-columns:repeat(2,1fr); }
+      .credentials { grid-template-columns:1fr; }
+      .section { padding:64px 0; }
+    }
+    @media (max-width:480px) {
+      .wrap { width:min(100% - 34px,1120px); }
+      .brand { font-size:.78rem; }
+      .nav-cta { padding:8px 12px; font-size:.78rem; }
+      h1 { font-size:2.7rem; }
+      .hero-copy { font-size:.96rem; }
+      .areas { grid-template-columns:1fr 1fr; gap:9px; }
+      .area { padding:18px 13px; min-height:145px; }
+      .area h3 { font-size:1.05rem; }
+      .portrait-note { left:-8px; }
+      .model-step { padding:16px 8px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="/">PTW <span>|</span> GRATITUDE</a>
+      <nav class="navlinks" aria-label="Navigasi utama">
+        <a href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="#approach">My Approach</a>
+        <a href="#contribution">Areas</a>
+        <a class="nav-cta" href="https://wa.me/6289638962843" target="_blank" rel="noopener">Let's Connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Human Development Architect</div>
+          <h1>Merancang Pertumbuhan Manusia Melalui Gratitude.</h1>
+          <div class="role">Paulus Tri Wahyudi (PTW) · Gratitude-Based Development</div>
+          <p class="hero-copy">Mengembangkan kesadaran, mengenali potensi, dan menghubungkan pertumbuhan dengan tindakan nyata—dalam kehidupan individu, keluarga, pendidikan, komunitas, dan organisasi.</p>
+          <div class="tagline">Bersyukur <span style="color:var(--gold)">•</span> Bertumbuh <span style="color:var(--gold)">•</span> Berdampak</div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/6289638962843" target="_blank" rel="noopener">Diskusikan Kolaborasi</a>
+            <a class="btn btn-outline" href="#about">Mengenal PTW</a>
+          </div>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait" role="img" aria-label="Area foto profil Paulus Tri Wahyudi">
+            <div class="monogram"><strong>PTW</strong><span>HUMAN DEVELOPMENT</span></div>
+          </div>
+          <div class="portrait-note"><strong>Paulus Tri Wahyudi</strong>Human Development Architect</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="about">
+      <div class="wrap about-grid">
+        <div class="side-label">“Pengembangan manusia dimulai dengan memahami kondisi, lalu merancang perjalanan pertumbuhan.”</div>
+        <div class="prose">
+          <div class="eyebrow">About PTW</div>
+          <h2>Menghubungkan manusia, pertumbuhan, dan dampak.</h2>
+          <p>Paulus Tri Wahyudi (PTW) adalah Arsitek Pengembangan Manusia yang mengembangkan pendekatan pengembangan manusia berbasis Gratitude.</p>
+          <p>Dengan pengalaman lebih dari 10 tahun dalam fasilitasi dan pengembangan manusia, PTW mengeksplorasi bagaimana Gratitude dapat menjadi fondasi untuk membangun kesadaran, memahami diri, mengenali potensi, dan mengembangkan kapasitas manusia.</p>
+          <p>Dalam pendekatannya, Gratitude tidak hanya dipahami sebagai ungkapan terima kasih atau praktik berpikir positif. Gratitude ditempatkan sebagai praktik yang membantu membuka kesadaran (awareness), sehingga manusia dapat melihat diri, pengalaman, pola pikir, dan lingkungan kehidupannya secara lebih utuh.</p>
+          <p>PTW mengembangkan kerangka pengembangan yang mengintegrasikan lima elemen: Gratitude, Awareness, Self-Image, Action, dan Feedback. Kerangka ini menghubungkan praktik bersyukur dengan proses memahami diri, membangun gambaran diri, mengambil tindakan, serta belajar melalui umpan balik.</p>
+          <p>Pendekatan tersebut diterapkan dalam berbagai konteks pengembangan, mencakup individu, keluarga, pendidikan, komunitas, dan organisasi.</p>
+          <p>Bagi PTW, pengembangan manusia bukan sekadar menyampaikan pengetahuan, memberikan motivasi, atau mendorong perubahan perilaku. Pengembangan manusia merupakan proses memahami kondisi, merancang perjalanan pertumbuhan, dan membangun kapasitas agar manusia dapat mengambil tindakan secara lebih sadar serta menghasilkan dampak yang bermakna.</p>
+          <p>Melalui PTW | Gratitude, gagasan, pengalaman, dan pendekatan tersebut dikembangkan menjadi ekosistem pembelajaran dan pengembangan yang menghubungkan manusia, pertumbuhan, dan dampak.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="principle" id="approach">
+      <div class="wrap">
+        <div class="principle-inner">
+          <div>
+            <div class="eyebrow">My Perspective</div>
+            <h2>Gratitude membuka ruang kesadaran.</h2>
+          </div>
+          <div>
+            <div class="principle-quote">“Gratitude is an awareness-enabling practice.”</div>
+            <p class="principle-text">Praktik bersyukur membantu seseorang memberi perhatian pada pengalaman hidup dan melihatnya dengan lebih utuh. Kesadaran tersebut menjadi titik awal untuk memahami kondisi diri, mengenali pola, memilih tindakan, dan belajar dari hasilnya.</p>
+          </div>
+        </div>
+        <div class="model" aria-label="Kerangka pengembangan PTW">
+          <div class="model-step"><b>Gratitude</b><span>Membuka perhatian</span></div>
+          <div class="model-step"><b>Awareness</b><span>Memahami kondisi</span></div>
+          <div class="model-step"><b>Self-Image</b><span>Membangun gambaran diri</span></div>
+          <div class="model-step"><b>Action</b><span>Mengambil tindakan</span></div>
+          <div class="model-step"><b>Feedback</b><span>Belajar dan menyesuaikan</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contribution">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Areas of Contribution</div>
+          <h2>Ruang pengembangan.</h2>
+          <p class="lead">Pendekatan pengembangan manusia dapat dirancang sesuai konteks, kebutuhan, dan kondisi setiap lingkungan.</p>
+        </div>
+        <div class="areas">
+          <article class="area"><div class="num">01</div><h3>Individu</h3><p>Kesadaran diri, pengenalan potensi, dan pertumbuhan personal.</p></article>
+          <article class="area"><div class="num">02</div><h3>Keluarga</h3><p>Relasi, pengasuhan, komunikasi, dan pembelajaran keluarga.</p></article>
+          <article class="area"><div class="num">03</div><h3>Pendidikan</h3><p>Pengembangan peserta didik, pendidik, dan ekosistem sekolah.</p></article>
+          <article class="area"><div class="num">04</div><h3>Komunitas</h3><p>Pembelajaran bersama, penguatan kapasitas, dan dampak sosial.</p></article>
+          <article class="area"><div class="num">05</div><h3>Organisasi</h3><p>Human development, pengembangan kinerja, dan dukungan proses.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Experience & Credentials</div>
+          <h2>Pengalaman dan landasan profesional.</h2>
+          <p class="lead">Menggabungkan pengalaman fasilitasi, pembelajaran, dan pengembangan pendekatan untuk mendukung pertumbuhan manusia di berbagai konteks.</p>
+        </div>
+        <div class="credentials">
+          <div class="credential-card">
+            <h3>Kredensial</h3>
+            <ul class="credential-list">
+              <li><strong>S.Pd.</strong> — Sarjana Pendidikan</li>
+              <li><strong>CHt</strong> — Certified Hypnotherapist</li>
+              <li><strong>MP-NNLP</strong></li>
+              <li><strong>Bars Practitioner</strong></li>
+            </ul>
+          </div>
+          <div class="credential-card">
+            <h3>Fokus kontribusi</h3>
+            <ul class="credential-list">
+              <li>Fasilitasi dan pengembangan manusia</li>
+              <li>Pengembangan pendekatan Gratitude-Based Development</li>
+              <li>Perancangan program pembelajaran dan pendampingan</li>
+              <li>Penguatan kapasitas individu, keluarga, komunitas, dan organisasi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="wrap">
+        <div class="eyebrow">Let's Grow Together</div>
+        <h2>Mari merancang pertumbuhan yang bermakna.</h2>
+        <p>Terbuka untuk percakapan dan kolaborasi dalam pengembangan individu, keluarga, pendidikan, komunitas, maupun organisasi.</p>
+        <a class="btn btn-primary" href="https://wa.me/6289638962843" target="_blank" rel="noopener">Hubungi melalui WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><span class="footer-brand">PTW | GRATITUDE</span><br>Bersyukur • Bertumbuh • Berdampak</div>
+      <div>© <span id="year">2026</span> Paulus Tri Wahyudi. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
